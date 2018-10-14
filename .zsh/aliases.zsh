@@ -1,0 +1,17 @@
+alias cp='/bin/cp -i'
+alias mv='/bin/mv -i'
+alias rm='/bin/rm -i'
+alias ln='/bin/ln -i'
+alias less='/usr/bin/less -M'
+alias v='ls -ho --time-style=long-iso'
+alias now='/bin/date +"%Y-%m-%d %H:%M:%S %z"'
+alias grep='grep --color=auto'
+alias rs='/usr/bin/rsync -r --progress --stats -h'
+alias sqlite3='/usr/bin/sqlite3 -header'
+
+alias term='xterm &!'
+alias tv-on='xrandr --output HDMI1 --above LVDS1 --mode 1920x1080i && killall -USR1 fbpanel'
+alias tv-off='xrandr --output HDMI1 --off && killall -USR1 fbpanel'
+
+alias mpg123='/usr/bin/mpg123 --index --gapless --smooth --control --title --verbose --output alsa'
+alias mplayer-hdmi='mplayer -ao alsa:device=hdmi'
