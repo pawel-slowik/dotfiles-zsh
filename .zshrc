@@ -63,6 +63,10 @@ PROMPT="%m:%30<…<%~%(?..%F{9}%B)%(!.#.$)%f%b "
 # select emacs keymap
 bindkey -e
 
+# autoload user defined functions from this directory, see man zshmisc
+# / autoloading functions and man zshcompsys / autoloaded files
+fpath=(~/.zsh/autoload $fpath)
+
 autoload -Uz compinit && compinit -i
 autoload -Uz run-help
 autoload -Uz zmv
