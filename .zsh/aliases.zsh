@@ -15,3 +15,5 @@ alias tv-off='xrandr --output HDMI1 --off && killall -USR1 fbpanel'
 
 alias mpg123='/usr/bin/mpg123 --index --gapless --smooth --control --title --verbose --output alsa'
 alias mplayer-hdmi='mplayer -ao alsa:device=hdmi'
+alias ffprobe='ffprobe -hide_banner'
+alias ffmpeg='ffmpeg -hide_banner'
