@@ -69,6 +69,7 @@ fpath=(~/.zsh/autoload $fpath)
 
 autoload -Uz compinit && compinit -i
 autoload -Uz run-help
+autoload -Uz run-help-git
 autoload -Uz zmv
 
 for file in ~/.zsh/*.zsh; do
