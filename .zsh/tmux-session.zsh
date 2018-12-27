@@ -15,7 +15,8 @@ function tmux_session() {
 			echo "no such session: $session_name" 1>&2
 			return 1
 		fi
-		commands=(source-file "$session_file")
+		commands=(start-server)
+		commands+=( \; source-file "$session_file")
 	fi
 	tmux "${commands[@]}"
 }
