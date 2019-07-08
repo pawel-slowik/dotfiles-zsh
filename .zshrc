@@ -20,7 +20,7 @@ ulimit -c unlimited
 export PATH="/usr/bin:/bin:/usr/local/bin"
 
 # local variant at the end - same as with $PATH
-export MANPATH="/usr/man:/usr/local/share/man"
+export MANPATH="/usr/man:/usr/share/man:/usr/local/share/man"
 
 # save temporary files in $HOME, because /tmp is world readable
 export TMPDIR="$HOME/.tmp"
