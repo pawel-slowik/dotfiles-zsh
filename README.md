@@ -11,3 +11,5 @@ Quick install:
 	cd .zsh
 	curl -L -O https://raw.githubusercontent.com/pawel-slowik/zsh-async-git-prompt/master/async-git-prompt.plugin.zsh
 	curl -L -O https://raw.githubusercontent.com/pawel-slowik/zsh-term-title/master/term-title.plugin.zsh
+
+	chsh -s /bin/zsh
