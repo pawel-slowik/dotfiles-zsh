@@ -17,3 +17,4 @@ alias mpg123='/usr/bin/mpg123 --index --gapless --smooth --control --title --ver
 alias mplayer-hdmi='mplayer -ao alsa:device=hdmi'
 alias ffprobe='ffprobe -hide_banner'
 alias ffmpeg='ffmpeg -hide_banner'
+alias highlight-html='highlight --syntax html --out-format xterm256'
