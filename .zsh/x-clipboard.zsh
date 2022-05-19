@@ -1,3 +1,7 @@
+if [[ "$DISPLAY" = "" ]]; then
+	return
+fi
+
 # https://unix.stackexchange.com/a/219678
 
 function paste-xclip() {
