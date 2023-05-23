@@ -8,6 +8,7 @@ alias now='/bin/date +"%Y-%m-%d %H:%M:%S %z"'
 alias grep='grep --color=auto'
 alias rs='/usr/bin/rsync -r --progress --stats -h'
 alias sqlite3='/usr/bin/sqlite3 -header'
+alias jqr="jq -r -R '. as \$line | try fromjson catch \$line'"
 
 alias term='xterm &!'
 alias tv-on='xrandr --output HDMI1 --above LVDS1 --mode 1920x1080i && killall -USR1 fbpanel'
