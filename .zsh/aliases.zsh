@@ -11,8 +11,6 @@ alias sqlite3='/usr/bin/sqlite3 -header'
 alias jqr="jq -r -R '. as \$line | try fromjson catch \$line'"
 
 alias term='xterm &!'
-alias tv-on='xrandr --output HDMI1 --above LVDS1 --mode 1920x1080i && killall -USR1 fbpanel'
-alias tv-off='xrandr --output HDMI1 --off && killall -USR1 fbpanel'
 
 alias mpg123='/usr/bin/mpg123 --index --gapless --smooth --control --title --verbose --output alsa'
 alias mplayer-hdmi='mplayer -ao alsa:device=hdmi'
