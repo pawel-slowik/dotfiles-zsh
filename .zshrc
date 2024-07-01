@@ -57,11 +57,19 @@ ZLE_REMOVE_SUFFIX_CHARS=$' \t\n;&'
 # character, not the command before it
 WORDCHARS='*?_-.[]~=/&;!#$%^(){}<>|'
 
-# - shortened hostname,
+# set the prompt:
+# - shortened hostname with distinct coloring for QEMU VMs and SSH logins
+if [[ -d "/sys/firmware/qemu_fw_cfg" ]]; then
+	host='%F{14}%m%f'
+elif [[ -n "$SSH_CONNECTION" ]]; then
+	host='%F{11}%m%f'
+else
+	host='%m'
+fi
 # - $PWD relative to $HOME and truncated to 30 characters,
 # - $ for normal shell, # for privileged
 # - red highlight if the last command exited with status != 0
-PROMPT="%m:%30<…<%~%(?..%F{9}%B)%(!.#.$)%f%b "
+PROMPT="$host:%30<…<%~%(?..%F{9}%B)%(!.#.$)%f%b "
 
 # select emacs keymap
 bindkey -e
