@@ -14,3 +14,6 @@ alias highlight-html='highlight --syntax html --out-format xterm256'
 
 alias ffprobe='ffprobe -hide_banner'
 alias ffmpeg='ffmpeg -hide_banner'
+
+alias pwgen-easy='pwgen 8 1'
+alias pwgen-hard='pwgen -s -y 24 1'
