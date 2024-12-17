@@ -60,7 +60,7 @@ WORDCHARS='*?_-.[]~=/&;!#$%^(){}<>|'
 # set the prompt:
 # - shortened hostname with distinct coloring for QEMU VMs and SSH logins
 if [[ -d "/sys/firmware/qemu_fw_cfg" ]]; then
-	host='%F{14}%m%f'
+	host='%F{13}%m%f'
 elif [[ -n "$SSH_CONNECTION" ]]; then
 	host='%F{11}%m%f'
 else
