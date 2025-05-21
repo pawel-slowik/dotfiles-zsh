@@ -35,6 +35,9 @@ export GREP_COLORS="ms=1;38;5;214:fn=96"
 # use Vim as the default editor
 export EDITOR=vim
 
+# disable D-Bus
+export DBUS_SESSION_BUS_ADDRESS=unix:path=/dev/null
+
 # history settings
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
