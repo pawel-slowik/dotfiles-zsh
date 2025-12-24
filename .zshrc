@@ -69,7 +69,8 @@ elif [[ -n "$SSH_CONNECTION" ]]; then
 else
 	host='%m'
 fi
-# - $PWD relative to $HOME and truncated to 30 characters,
+# (the remaining string is truncated to 30 characters)
+# - $PWD relative to $HOME,
 # - $ for normal shell, # for privileged
 # - red highlight if the last command exited with status != 0
 PROMPT="$host:%30<…<%~%(?..%F{9}%B)%(!.#.$)%f%b "
