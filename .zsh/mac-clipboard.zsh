@@ -11,5 +11,13 @@ function paste-pb() {
 	zle yank
 }
 
+function copy-command-line-pb() {
+	emulate -L zsh
+	echo -n "$BUFFER" | pbcopy
+}
+
 zle -N paste-pb
 bindkey "^xp" paste-pb
+
+zle -N copy-command-line-pb
+bindkey "^xc" copy-command-line-pb
